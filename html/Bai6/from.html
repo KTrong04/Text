@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            padding: 0px;
+            height: 100%;
+            font-size: 20px;
+            justify-content: center;
+        }
+        .khung {
+            width: 500px;
+            height: 100px;
+            background-color: aqua;
+            border: 2px solid black;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            box-shadow: 10px 10px 0px rgb(153, 153, 153);
+        }
+        .text {
+            font-size: 40px;
+            text-align: center;
+            margin: 1px;
+        }
+        .duongke {
+            width: 99%;
+            height: 2px;
+            background-color: black;
+            padding: 2px;
+            
+        }
+        .can_trai {
+           padding-left: 250px;
+        }
+        .dk {
+            width: 67%;
+            height: 3px;
+            background-color: rgb(162, 101, 101);
+            margin: auto;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(142, 198, 248);">
+    <div style="display: flex;">
+        <div class="khung" style="margin: auto;">
+            <div class="text"><b>Jackson</b></div>
+            <div class="duongke"></div>
+            <div class="text"><b>Electronics</b></div>
+        </div>   
+    </div>
+    
+    <p style="font-size: 30px;text-align: center;"><b>Registration Form</b></p>
+    <p style="font-size: 20px; text-align: center;">Register your Jackson Electronics product here</p>
+    
+ 
+    
+    <div style="display: flex;">
+        <label class="can_trai">First Name:</label>
+        <div style="padding-left: 310px;">
+            <input style="width: 200px;">
+        </div>
+        <div style="display: contents;">
+            <label>&nbsp;Last Name:&nbsp;</label>
+            <input style="width: 200px;"> 
+        </div>
+    </div>
+    <div style="display: flex;">
+        <label class="can_trai">Address #1:</label>
+        <div style="padding-left: 310px;">
+            <input style="width: 320px;">
+        </div>
+    </div>
+    <div style="display: flex;">
+        <label class="can_trai">Address #2:</label>
+        <div style="padding-left: 310px;">
+            <input style="width: 320px;">
+        </div>
+    </div>
+    <div style="display: flex;">
+        <label class="can_trai">City:</label>
+        <div style="padding-left: 366px;">
+            <input style="width: 240px;">
+            <div style="display: contents;">
+                <label>&nbsp;State:&nbsp;</label>
+                <input style="width: 60px;">
+                <label>&nbsp;Zip:&nbsp;</label>
+                <input style="width: 100px;">
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;">
+        <label class="can_trai">Country:</label>
+        <div style="padding-left: 335px;">
+            <input style="width: 240px;">
+        </div>
+    </div>
+    <br>
+    <div class="dk"></div>
+    <br>
+    <div style="display: flex;">
+        <label class="can_trai">Product:</label>
+        <div style="padding-left: 338px;">
+            <select name="ScanMaster" style="width: 200px;"> 
+                <optgroup>
+                    <option>ScanMaster
+                    <option>Printer
+                    <option>Laptop
+                </optgroup>
+            </select>
+        </div>
+    </div>
+    <div style="display: flex;">
+        <label class="can_trai">Date Purchased:</label>
+        <div style="padding-left: 275px;">
+            <input style="width: 240px;">
+        </div>
+    </div>
+    <div style="display: flex;">
+        <label class="can_trai">Serial #:</label>
+        <div style="padding-left: 338px;">
+            <input style="width: 240px;">
+        </div>
+    </div>
+    <div style="display: flex;">
+        <label class="can_trai">Used for:</label>
+        <div style="padding-left: 338px;">
+            <form>
+                <input type="radio" name="use" value="home">Home
+                <dv style="padding-left: 150px;">
+                    <input type="radio" name="use" value="home">Educational Insitiution
+                </dv>
+                <br>
+                <input type="radio" name="use" value="home" checked>Business
+                <dv style="padding-left: 128px;">
+                    <input type="radio" name="use" value="home">Other
+                </dv>
+                <br>
+                <input type="radio" name="use" value="home">Govemment
+            </form>
+        </div>
+    </div>
+    <br>
+    <div style="display: flex;">
+        <label class="can_trai">System (check all that apply):</label>
+        <div style="padding-left: 174px;">
+            <form>
+                <input type="checkbox" name="st" value="Win">Windows
+                <dv style="padding-left: 125px;">
+                    <input type="checkbox" name="st" value="home">UNIX
+                </dv>
+                <br>
+                <input type="checkbox" name="st" value="home">Macintosh
+                <dv style="padding-left: 116px;">
+                    <input type="checkbox" name="st" value="home">Other
+                </dv>
+                <br>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="dk"></div>
+    <br>
+    <div style="display: flex;">
+        <label class="can_trai">Comments?:</label>
+        <div style="padding-left: 305px;">
+            <input size="85%" style="height: 100px;" type="text" name="comments">
+            <dv style="display: block;">
+                <input type="submit" value="Click to register"> 
+                <input type="submit" value="Click to cancel">  
+            </dv>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

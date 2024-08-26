@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            position: relative;
+            width: 400px; /* Đặt chiều rộng khung container */
+            margin: 20px;
+        }
+        .container label {
+            position: absolute;
+            left: -100px; /* Đặt label ra phía bên ngoài bên trái khung nhập liệu */
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .resizable-textarea {
+            width: 100%;
+            height: 100px;
+            resize: both;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Label Bên Trái Khung Nhập Văn Bản</title>
+</head>
+<body>
+
+<div class="container">
+    <label for="textarea">Label:</label>
+    <textarea id="textarea" class="resizable-textarea" placeholder="Nhập văn bản ở đây..."></textarea>
+</div>
+
+</body>
+</html>
